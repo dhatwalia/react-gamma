@@ -21,10 +21,17 @@ class Model extends Car {
 }
 const myCar = new Model("Ford", "Mustang");
 
+let hello = () => {
+  return "The use of hello as a telephone greeting has been credited to Thomas Edison; according to one source, he expressed his surprise with a misheard Hullo.";
+}
+
 function App() {
   return (
     <div className="App">
       Hello! {myCar.show()}
+      <br></br>
+      <div class="hello">{hello()}</div>
+      <br></br>
     </div>
   );
 }
