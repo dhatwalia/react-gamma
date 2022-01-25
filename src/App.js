@@ -1,4 +1,5 @@
 import './App.css';
+import { numbersCombined } from './AppExtra.js';
 
 class Car {
   constructor(name) {
@@ -36,6 +37,8 @@ function App() {
       <div class="hello">{hello()}</div>
       <br></br>
       <div>{myList}</div>
+      <br></br>
+      <div>{numbersCombined}</div>
     </div>
   );
 }
