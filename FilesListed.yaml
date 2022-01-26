@@ -1,0 +1,16 @@
+- title: Projects
+  items: 
+    - title: Auction
+      link: projects/auction
+    - title: Holespiral
+      link: projects/holespiral
+    - title: Test
+      items: 
+        - title: Abc
+          link: projects/test/abc
+        - title: Test2
+          items: 
+- title: Research
+  items: 
+    - title: Sudoku Solver
+      link: research/sudoku-solver
