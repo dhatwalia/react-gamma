@@ -29,6 +29,8 @@ let hello = () => {
 const myArray = ['Apple', 'Google', 'Meta'];
 const myList = myArray.map((item) => <div>{item}</div>);
 
+const myelement = <h3 className="myclass">JSX className</h3>;
+
 function App() {
   return (
     <div className="App">
@@ -39,6 +41,8 @@ function App() {
       <div>{myList}</div>
       <br></br>
       <div>{numbersCombined}</div>
+      <br></br>
+      <div>{myelement}</div>
     </div>
   );
 }
