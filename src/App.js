@@ -1,5 +1,6 @@
 import './App.css';
 import { numbersCombined } from './AppExtra.js';
+import FuncComp from './Car.js';
 
 class Car {
   constructor(name) {
@@ -43,6 +44,8 @@ function App() {
       <div>{numbersCombined}</div>
       <br></br>
       <div>{myelement}</div>
+      <br></br>
+      <div><FuncComp color="red"/></div>
     </div>
   );
 }
