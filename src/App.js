@@ -46,6 +46,8 @@ function App() {
       <div>{myelement}</div>
       <br></br>
       <div><CarComp color="blue"/></div>
+      <div id="carColor"></div>
+      <br></br>
     </div>
   );
 }
