@@ -1,5 +1,13 @@
-function FuncComp(props) {
-    return <h2>I am a {props.color} Car!</h2>;
-  }
+import React from 'react';
 
-export default FuncComp;
+class CarComp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { carColor: "red" };
+  }
+  render() {
+    return <h2>I am a {this.state.carColor} Car!</h2>;
+  }
+}
+
+export default CarComp;
