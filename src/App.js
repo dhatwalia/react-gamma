@@ -42,6 +42,22 @@ function Football() {
   );
 }
 
+function MissedGoal() {
+  return <h3>MISSED!</h3>;
+}
+
+function MadeGoal() {
+  return <h3>Goal!</h3>;
+}
+
+function Goal(props) {
+  const isGoal = props.isGoal;
+  if (isGoal)
+    return <MadeGoal/>;
+  else
+    return <MissedGoal/>;
+}
+
 function App() {
   return (
     <div className="App">
@@ -59,6 +75,8 @@ function App() {
       <div id="carColor"></div>
       <br></br>
       <Football />
+      <br></br>
+      <Goal isGoal={true} />
       <br></br>
     </div>
   );
