@@ -32,6 +32,16 @@ const myList = myArray.map((item) => <div>{item}</div>);
 
 const myelement = <h3 className="myclass">JSX className</h3>;
 
+function Football() {
+  const shoot = (a) => {
+    alert(a);
+  }
+
+  return (
+    <button onClick={() => shoot("Goal!")}>Take the shot!</button>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -45,8 +55,10 @@ function App() {
       <br></br>
       <div>{myelement}</div>
       <br></br>
-      <div><CarComp color="blue"/></div>
+      <div><CarComp color="blue" /></div>
       <div id="carColor"></div>
+      <br></br>
+      <Football />
       <br></br>
     </div>
   );
