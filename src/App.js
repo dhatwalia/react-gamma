@@ -82,7 +82,7 @@ function F1Garage() {
   );
 }
 
-function App() {
+function Main() {
   return (
     <div className="App">
       Hello! {myCar.show()}
@@ -110,4 +110,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
