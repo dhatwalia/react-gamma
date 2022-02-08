@@ -1,6 +1,7 @@
 import './App.css';
 import { numbersCombined } from './AppExtra.js';
 import CarComp from './Car.js';
+import MyForm from './Form';
 
 class Car {
   constructor(name) {
@@ -102,6 +103,8 @@ function App() {
       <Goal isGoal={true} />
       <br></br>
       <F1Garage />
+      <br></br>
+      <MyForm />
       <br></br>
     </div>
   );
