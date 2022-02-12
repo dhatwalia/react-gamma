@@ -1,8 +1,10 @@
 import './App.css';
-import { numbersCombined } from './AppExtra.js';
-import CarComp from './Car.js';
+import { numbersCombined } from './components/NumbersCombined.js';
+import CarComp from './components/Car.js';
+import F1Garage from './components/F1Garage';
 import TextForm from './components/TextArea';
-import MyForm from './Form';
+import MyForm from './components/Form';
+import Goal from './components/NestedGoals';
 
 class Car {
   constructor(name) {
@@ -41,45 +43,6 @@ function Football() {
 
   return (
     <button onClick={() => shoot("Goal!")}>Take the shot!</button>
-  );
-}
-
-function MissedGoal() {
-  return <h3>MISSED!</h3>;
-}
-
-function MadeGoal() {
-  return <h3>Goal!</h3>;
-}
-
-function Goal(props) {
-  const isGoal = props.isGoal;
-  if (isGoal)
-    return <MadeGoal />;
-  else
-    return <MissedGoal />;
-}
-
-function F1Garage() {
-  const cars = [
-    { position: 1, brand: 'Mercedes' },
-    { position: 2, brand: 'Redbull' },
-    { position: 3, brand: 'Ferrari' },
-    { position: 4, brand: 'McLaren' },
-    { position: 5, brand: 'Alpine' },
-    { position: 6, brand: 'AlphaTauri' },
-    { position: 7, brand: 'Aston Martin' },
-    { position: 8, brand: 'Williams' },
-    { position: 9, brand: 'Alfa Romeo' },
-    { position: 10, brand: 'Haas' },
-  ];
-  return (
-    <div>
-      <h2>F1 2021 standing</h2>
-      <ol>
-        {cars.map((car) => <li>{car.brand} is in position {car.position}</li>)}
-      </ol>
-    </div>
   );
 }
 
