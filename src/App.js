@@ -1,6 +1,7 @@
 import './App.css';
 import { numbersCombined } from './AppExtra.js';
 import CarComp from './Car.js';
+import TextForm from './components/TextArea';
 import MyForm from './Form';
 
 class Car {
@@ -105,6 +106,8 @@ function Main() {
       <F1Garage />
       <br></br>
       <MyForm />
+      <br></br>
+      <TextForm />
       <br></br>
     </div>
   );
