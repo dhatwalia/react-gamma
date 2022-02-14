@@ -5,6 +5,7 @@ import F1Garage from './components/F1Garage';
 import TextForm from './components/TextArea';
 import MyForm from './components/Form';
 import Goal from './components/NestedGoals';
+import FavoriteColor from './components/FavColor';
 
 class Car {
   constructor(name) {
@@ -71,6 +72,8 @@ function Main() {
       <MyForm />
       <br></br>
       <TextForm />
+      <br></br>
+      <FavoriteColor />
       <br></br>
     </div>
   );
