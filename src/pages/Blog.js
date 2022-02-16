@@ -1,3 +1,4 @@
+import Component1 from "../components/NestedComponents";
 import Timer from "../components/Timer";
 
 const Blog = () => {
@@ -5,6 +6,7 @@ const Blog = () => {
         <div>
             <h1>Blog Articles</h1>
             <Timer />
+            <Component1 />
         </div>
     );
 };
