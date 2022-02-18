@@ -1,6 +1,7 @@
 import NameForm from "../components/NameForm";
 import Component1 from "../components/NestedComponents";
 import Timer from "../components/Timer";
+import Todos from "../components/Todos";
 
 const Blog = () => {
     return (
@@ -9,6 +10,7 @@ const Blog = () => {
             <Timer />
             <Component1 />
             <NameForm />
+            <Todos />
         </div>
     );
 };
