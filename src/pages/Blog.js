@@ -6,7 +6,7 @@ import Todos2 from "../components/Todos2";
 
 const Blog = () => {
     return (
-        <div>
+        <div class="hello">
             <h1>Blog Articles</h1>
             <Timer />
             <Component1 />
